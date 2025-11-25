@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Link Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&display=swap" rel="stylesheet">
+    <!-- style -->
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        .font-bbh{
+            font-family: 'BBH Sans Bartle', sans-serif;
+        }
+    </style>
+    <title>Top Tier Book</title>
+</head>
+<body class="bg-slate-800 text-stone-100">
+    <header class="md sm w-screen h-[4rem] bg-sky-950 flex justify-start items-center">
+        <div class="mx-8">
+            <h1 class="text-2xl text-lime-400 font-bold font-bbh">Top Tier Book</h1>
+        </div>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
